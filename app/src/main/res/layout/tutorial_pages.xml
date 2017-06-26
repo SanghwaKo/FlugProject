@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+    <Button
+        android:id="@+id/btn_skip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/skip"
+        android:textColor="@color/text_black"
+        android:textSize="15sp"
+        android:background="@color/white"
+        android:onClick="onSkip"
+        android:gravity="right|center_vertical"
+        android:paddingRight="15dp"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_skip"/>
+</RelativeLayout>
