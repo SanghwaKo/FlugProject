@@ -1,9 +1,8 @@
 This is an application which I made in an Aviation-Hackathon. (17.06.17 - in Berlin)
 Our team (AirportShopper) did a project for shoppers who do not have enough time to buy what they need before their flights.
-Our team consist of one back-end developer, one front-end developer (me), one designer, one idea generator and one who studies learning machine.
+Our team consisted of one back-end developer, one front-end developer (me), one designer, one idea generator and the other who studies Learning-machine.
 Our aim : The travelers can get recommendations what they need and can shop while waiting in the long-lines in airports.
-	They select their flights in the flights' list. When they arrive at the airports they can get what they ordered before departures.
-(I cannot upload the pdf file with detail information, because the idea was of one of my team-members.)
+	They select their flights in the flights' list. When they arrive at the destinations they can get what they ordered before departures.
 
 1. Tutorial -> Explains the users how they can use our application and the aim of the application.
 2. Detects beacons nearby the users -> I could use a beacon which was supported by Estimote by using a library.
@@ -13,9 +12,9 @@ Our aim : The travelers can get recommendations what they need and can shop whil
 4. Get flights info when the user's device detects the airport's beacon.
 				-> If the airport, where the users are, has a beacon, the device knows in which airport the users are.
 				-> By using the airport's APIs, the application can get the flights' info which depart from that airport.
-				(After the hackathon, I changed this part, because the airport's api is not open anymore.)
+				(* After the hackathon, I changed this part, because the airport's api is not open anymore.)
 5. Recommends users products -> (Concept) At first, the app shows the users products based on the information from their sns.
-			-> Users decide if they want to keep the product or skip it. Whenever they decide, the application send this information to the beacon.
+			-> Users decide if they want to keep the product or skip it. Whenever they decide, the application sends this information to the beacon.
 			-> Using the learning machine, the beacon can recommend the users only what they would need.
 			(User's traveler-type and their devices' info can be good hints for it)
 	
