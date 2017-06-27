@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
 
     // URL..
     private static String mFlightInfoURL = "http://air.trimmer.io/flights?deviceId=1\\&beaconId=1";
-    // Cannot get the data after the event, because of inaccessibility to the airport's api anymore.
+    // Cannot get the data after the Hackathon, because of inaccessibility to the airport's api anymore.
     private static String mProductBaseURL = "http://air.trimmer.io/products/";
     private String mDeviceIdURL = "?deviceId=1";// example : m1?deviceId=1";
 
@@ -113,7 +113,7 @@ public class MainActivity extends Activity {
         mCurrentProductIndex++;
         if(mCurrentProductIndex < mProducts.size()){
             showProductImage();
-            mAirApplication.increateCntSavedItems();
+            mAirApplication.increaseCntSavedItems();
             refreshCntBookmark();
         }
     }
@@ -192,8 +192,8 @@ public class MainActivity extends Activity {
                         if(oneFlight.has(Constant.TAG_SCHEDULED_TIME)){
                             flight.setScheduleTime(oneFlight.getString(Constant.TAG_SCHEDULED_TIME));
                         }
-                        if(oneFlight.has(Constant.TAG_BOADING_TIME)){
-                            flight.setBoadingTime(oneFlight.getString(Constant.TAG_BOADING_TIME));
+                        if(oneFlight.has(Constant.TAG_BOARDING_TIME)){
+                            flight.setBoardingTime(oneFlight.getString(Constant.TAG_BOARDING_TIME));
                         }
                         if(oneFlight.has(Constant.TAG_TERMINAL)){
                             flight.setTerminal(oneFlight.getString(Constant.TAG_TERMINAL));

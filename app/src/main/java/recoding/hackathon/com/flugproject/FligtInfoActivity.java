@@ -32,10 +32,10 @@ public class FligtInfoActivity extends Activity implements AdapterView.OnItemCli
         setContentView(R.layout.flight_info_page);
         mAirApplication = AirApplication.getInstance();
         mAirApplication.setCurrentActivity(this);
-        mFlightListView = (ListView)findViewById(R.id.flight_listview);
 
         mFlights = mAirApplication.getFlights();
 
+        mFlightListView = (ListView)findViewById(R.id.flight_listview);
         mFlightAdapter = new FlightListAdapter(this, mFlights);
         mFlightListView.setAdapter(mFlightAdapter);
         mFlightListView.setOnItemClickListener(this);
@@ -78,7 +78,7 @@ public class FligtInfoActivity extends Activity implements AdapterView.OnItemCli
 
             String schedule = flight.getScheduleTime();
             String time = schedule.substring(11, schedule.length());
-            flightView.setInfo(flight.getAirlineCode() + " to " + flight.getArrivalAirport());
+            flightView.setInfo(flight.getAirlineCode() + " - " + flight.getArrivalAirport());
 
             flightView.setTime(time);
 

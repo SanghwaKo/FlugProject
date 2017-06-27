@@ -26,18 +26,18 @@ import java.util.UUID;
 public class AirApplication extends Application {
     private static AirApplication mInstance;
 
-    private String mBeaconId = ""; // Got from the beacon, when the device is connected to it.
-    private MirrorContextManager mMirrorContextManager;
+    private String mBeaconId = ""; // Gets from a beacon, when the device is connected to it.
     private String mDeviceId = ""; // the device's uuid
+    private MirrorContextManager mMirrorContextManager; // To communicate with the connected-beacon.
 
-    private ArrayList<Flight> mFlights; // Flights information which the device gets from the aiport's api
+    private ArrayList<Flight> mFlights; // Flights information which the device gets from the airport's api
     private Flight mUserFilght; // User flight - The user can select his flight from the flights' list
-    private ArrayList<Product> mCollectedProducts; // Products in AirMark.
+    private ArrayList<Product> mCollectedProducts; // Products which the users saved.
     private int mCntSavedItems = 0;
 
     private Activity mCurrentActivity;
 
-    // Singleton
+    // SingleTon
     public static AirApplication getInstance(){
         return mInstance;
     }
@@ -141,12 +141,14 @@ public class AirApplication extends Application {
         return mCntSavedItems;
     }
 
-    public void increateCntSavedItems(){
+    public void increaseCntSavedItems(){
         mCntSavedItems++;
     }
 
     public void setIsAttachedBeacon(boolean isAttachedBeacon){
-        Log.d(Constant.APP_TAG, "setIsAttachedCalled");
+        if(Debug.DEBUG){
+            Log.d(Constant.APP_TAG, "setIsAttachedBeacon() Called " + isAttachedBeacon);
+        }
 
         if(isAttachedBeacon){
             if(mCurrentActivity instanceof MainActivity){
@@ -155,6 +157,7 @@ public class AirApplication extends Application {
         }else{
             if(mCurrentActivity instanceof MainActivity){
                 ((MainActivity)mCurrentActivity).setWaitBeaconSignalView();
+                // We are waiting for a beacon's signal
             }
         }
     }
@@ -175,7 +178,7 @@ public class AirApplication extends Application {
         return mDeviceId;
     }
 
-   public void addCollectedProduch(Product product){
+   public void addCollectedProduct(Product product){
        mCollectedProducts.add(product);
    }
 

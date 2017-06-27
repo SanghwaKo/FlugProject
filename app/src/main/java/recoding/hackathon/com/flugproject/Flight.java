@@ -12,7 +12,7 @@ public class Flight {
     private String arrivalAirport = "";
     private String scheduleTime = "";
     private String estimatedTime = "";
-    private String boadingTime = "";
+    private String boardingTime = "";
     private String terminal = "";
     private String gate = "";
 
@@ -72,12 +72,12 @@ public class Flight {
         this.estimatedTime = estimatedTime;
     }
 
-    public String getBoadingTime() {
-        return boadingTime;
+    public String getBoardingTime() {
+        return boardingTime;
     }
 
-    public void setBoadingTime(String boadingTime) {
-        this.boadingTime = boadingTime;
+    public void setBoardingTime(String boardingTime) {
+        this.boardingTime = boardingTime;
     }
 
     public String getTerminal() {

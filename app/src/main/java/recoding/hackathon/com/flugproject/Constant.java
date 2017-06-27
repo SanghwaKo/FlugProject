@@ -28,7 +28,7 @@ public class Constant {
     public static final String TAG_ARRIVAL = "arrivalAirport";
     public static final String TAG_SCHEDULED_TIME = "scheduledTime";
     public static final String TAG_ESTIMATED_TIME = "estimatedTime";
-    public static final String TAG_BOADING_TIME = "boardingTime";
+    public static final String TAG_BOARDING_TIME = "boardingTime";
     public static final String TAG_TERMINAL = "terminal";
     public static final String TAG_GATE = "gate";
 
