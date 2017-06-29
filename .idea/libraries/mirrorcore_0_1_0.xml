@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="mirrorcore-0.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/a643f44c4fab74285a4f30097ded7545269af49c/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/a643f44c4fab74285a4f30097ded7545269af49c/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.estimote/mirrorcore/0.1.0/cc2dc6d82a56edef61f0357e44f1c3d2ca0f3cfb/mirrorcore-0.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

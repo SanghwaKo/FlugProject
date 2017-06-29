@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\KSH\workspace\Test\FlugProject\app\libs\json.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="949abe1460757b8dc9902c562f83e49675444572">
+        <dex dex="C:\Users\KSH\workspace\Test\FlugProject\app\build\intermediates\pre-dexed\debug\json_71f54e144b8bf2e59e8aecafb01daf07f9f64022.jar" />
+    </item>
+
+</items>

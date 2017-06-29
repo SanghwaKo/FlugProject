@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="context-0.1.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/9c00d81fc2faee5f5dfe65767a505104dafd590f/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/9c00d81fc2faee5f5dfe65767a505104dafd590f/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.estimote/context/0.1.0/5ed2c6c28074c422fc1bc27e5194a75909d385cc/context-0.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
